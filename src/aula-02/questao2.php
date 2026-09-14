@@ -1,13 +1,8 @@
 <?php
 
-$idade = (int) readline("Digite a idade da pessoa: ");
+$numero1 = (float) readline("Digite o primeiro número real: ");
+$numero2 = (float) readline("Digite o segundo número real: ");
 
-if ($idade < 12) {
-    echo "Classificação: Criança\n";
-} elseif ($idade >= 12 && $idade <= 17) {
-    echo "Classificação: Adolescente\n";
-} elseif ($idade >= 18 && $idade <= 59) {
-    echo "Classificação: Adulto\n";
-} else {
-    echo "Classificação: Idoso\n";
-}
+$soma = $numero1 + $numero2;
+
+echo "A soma é: $soma\n";

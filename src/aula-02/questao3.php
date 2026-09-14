@@ -1,15 +1,10 @@
 <?php
 
-$nome = readline("Digite o nome do aluno: ");
-$nota = (float) readline("Digite a nota do aluno: ");
+$numero1 = (float) readline("Digite o primeiro número real: ");
+$numero2 = (float) readline("Digite o segundo número real: ");
 
-if ($nota >= 7.0) {
-    echo "Aluno: $nome\n";
-    echo "Situação: Aprovado\n";
-} elseif ($nota >= 5.0) {
-    echo "Aluno: $nome\n";
-    echo "Situação: Recuperação\n";
-} else {
-    echo "Aluno: $nome\n";
-    echo "Situação: Reprovado\n";
-}
+$subtracao = $numero1 - $numero2;
+$multiplicacao = $numero1 * $numero2;
+
+echo "Subtração: $subtracao\n";
+echo "Multiplicação: $multiplicacao\n";

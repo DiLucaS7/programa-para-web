@@ -1,18 +1,19 @@
 <?php
 
-$valorCompra = (float) readline("Digite o valor da compra: ");
+$numero1 = (float) readline("Digite o primeiro número: ");
+$numero2 = (float) readline("Digite o segundo número: ");
 
-if ($valorCompra < 50) {
-    $frete = 10.00;
-} elseif ($valorCompra >= 50 && $valorCompra < 100) {
-    $frete = 7.50;
-} elseif ($valorCompra >= 100 && $valorCompra < 200) {
-    $frete = 5.00;
+$soma = $numero1 + $numero2;
+$subtracao = $numero1 - $numero2;
+$multiplicacao = $numero1 * $numero2;
+
+if ($numero2 == 0) {
+    echo "Divisão: impossível, divisor igual a zero.\n";
 } else {
-    $frete = 0.00;
+    $divisao = $numero1 / $numero2;
+    echo "Divisão: $divisao\n";
 }
 
-$total = $valorCompra + $frete;
-
-echo "Frete: R$ " . number_format($frete, 2, ',', '.') . "\n";
-echo "Total da compra: R$ " . number_format($total, 2, ',', '.') . "\n";
+echo "Soma: $soma\n";
+echo "Subtração: $subtracao\n";
+echo "Multiplicação: $multiplicacao\n";
